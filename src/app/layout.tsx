@@ -3,8 +3,8 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "DeFi Lending | @samdevrel",
-  description: "Deposit collateral and borrow against it in DeFi lending markets.",
-  keywords: ["defi", "lending", "borrowing", "collateral", "apy", "defi-borrow"],
+  description: "Supply assets and borrow against collateral. Real-time APY, utilization, and pool metrics.",
+  keywords: ["defi", "lending", "supply", "borrow", "apy", "collateral", "ltv"],
   authors: [{ name: "Sam", url: "https://x.com/samdevrel" }],
 };
 
