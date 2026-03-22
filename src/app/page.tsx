@@ -122,8 +122,38 @@ export default function Home() {
     <main className="min-h-screen bg-gray-950 text-white">
       <header className="border-b-4 border-purple-400 bg-gray-900 p-6">
         <div className="max-w-6xl mx-auto">
-          <h1 className="text-3xl md:text-4xl font-black">DeFi Lending</h1>
-          <p className="text-gray-400 mt-2">Supply assets and borrow against collateral with real-time metrics</p>
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+            <div>
+              <h1 className="text-3xl md:text-4xl font-black">DeFi Lending</h1>
+              <p className="text-gray-400 mt-2">Supply assets and borrow against collateral with real-time metrics</p>
+            </div>
+            <nav className="flex gap-2">
+              <a
+                href="/"
+                className="px-4 py-2 bg-gray-800 border-2 border-gray-600 hover:border-purple-400 rounded font-bold transition-all"
+              >
+                Home
+              </a>
+              <a
+                href="/lending"
+                className="px-4 py-2 bg-gray-800 border-2 border-gray-600 hover:border-purple-400 rounded font-bold transition-all"
+              >
+                Lending
+              </a>
+              <a
+                href="/faucet"
+                className="px-4 py-2 bg-gray-800 border-2 border-gray-600 hover:border-purple-400 rounded font-bold transition-all"
+              >
+                Faucet
+              </a>
+              <a
+                href="/docs"
+                className="px-4 py-2 bg-purple-500 border-2 border-purple-400 rounded font-bold transition-all"
+              >
+                Documentation
+              </a>
+            </nav>
+          </div>
         </div>
       </header>
 
@@ -370,6 +400,16 @@ export default function Home() {
               <p className="text-sm text-gray-400">$20.8M raised, shared liquidity pools, no liquidation risk.</p>
             </div>
           </div>
+        </section>
+
+        {/* Documentation Button */}
+        <section className="text-center py-8">
+          <a
+            href="/docs"
+            className="inline-block px-8 py-3 bg-purple-500 border-4 border-purple-400 text-white font-bold text-lg rounded hover:bg-purple-400 transition-all"
+          >
+            View Documentation
+          </a>
         </section>
 
         {/* Footer */}
